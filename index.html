@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Smart</title>
+  <meta name="description" content="Work Smart - Turn your calendar into an automatic to-do list" />
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text: #e8ecf8;
+      --muted: #b5bfd6;
+      --accent: #7c9cff;
+      --accent-2: #8ef0d2;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(124, 156, 255, 0.22), transparent 30%),
+        radial-gradient(circle at top right, rgba(142, 240, 210, 0.18), transparent 24%),
+        linear-gradient(180deg, #0a0f1d 0%, #0f1628 45%, #0a0f1d 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      text-align: center;
+    }
+
+    .card {
+      padding: 48px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(124, 156, 255, 0.18), rgba(255, 255, 255, 0.06));
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      margin: 0 0 12px;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-primary {
+      background: rgba(124, 156, 255, 0.25);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Work Smart</h1>
+      <p>
+        Turn your calendar into an automatic to-do list.<br />
+        Stay organized, focused, and productive—without manual planning.
+      </p>
+
+      <div class="buttons">
+        <a href="privacy.html" class="btn btn-primary">Privacy Policy</a>
+        <a href="support.html" class="btn btn-secondary">Support</a>
+      </div>
+
+      <div class="footer">
+        © 2026 Work Smart
+      </div>
+    </div>
+  </div>
+</body>
+</html>
